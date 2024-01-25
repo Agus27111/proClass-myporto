@@ -1,11 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap");
 
 :root {
-  --gradient: linear-gradient(
-    -145deg,
-    #ff6c63 20.37%,
-    rgba(255, 177, 71, 0.2) 57.73%
-  );
+  --gradient: linear-gradient(-145deg, #00afb5 20.37%, #00477733 57.73%);
+  --gradient-2: #2c2d2f;
+  --def-transition-duration: 0.2s;
 }
 * {
   margin: 0;
@@ -17,6 +15,23 @@
 body {
   height: 100vh;
 }
+/* aside section*/
+ul li a {
+  transition-property: background-color, padding;
+  transition-duration: var(--def-transition-duration);
+  transition-timing-function: ease-in-out;
+}
+ul li a:hover {
+  background-color: #2c2d2f;
+  padding: 0.8rem 0.5rem;
+}
+.social-media {
+  transition: transform 0.4s ease-in;
+}
+.social-media:hover {
+  transform: scale(2);
+}
+/* Hero section */
 .hero-text {
   color: #141313;
   font-family: "IBM Plex Sans";
@@ -58,4 +73,30 @@ body {
   background: var(--gradient);
   border-radius: 0.3em;
   border: none;
+  transition: backround 0.4s ease-in-out, color 0.4s ease-out;
+}
+.btn-hero:hover {
+  background: var(--gradient-2);
+  color: white;
+}
+.whatsapp a {
+  transition: color 0.4s ease-out;
+}
+.whatsapp a:hover {
+  color: var(--gradient-2);
+}
+/* floating icon */
+.blue-sosmed {
+  right: 0;
+  position: fixed;
+}
+.blue-sosmed a i {
+  transition: transform 0.3s ease !important;
+}
+.blue-sosmed a i:hover {
+  transform: scale(1.2) !important;
+}
+
+.blue-sosmed hr {
+  border: 0.5px solid #00afb5;
 }

@@ -14,10 +14,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <aside class="float-start">
+    <aside class="float-start h-auto">
       <div
         class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark"
         style="width: 280px; height: 100vh"
@@ -90,45 +90,88 @@
         </div>
       </div>
     </aside>
-    <main class="">
-      <div class="hero-section h-auto w-auto">
-        <div
-          class="hero d-flex justify-content-around align-items-center position-relative"
-          style="width: auto; height: 100vh"
-        >
-          <!-- HERO TEXT -->
-          <div class="hero-text position-relative">
-            <h1 class="z-2">My name is Agus Setiawan...</h1>
-            <p id="typing" class="z-2">Web Developer based in Indonesia</p>
-            <button type="button" class="btn-hero btn mb-3">
-              Let’s talk with me <i class="bi bi-arrow-right-square-fill"></i>
-            </button>
-            <div class="whatsapp justify-content-start fs-6">
-              <a href="whatsapp.me/+6287822368008" class="me-5">
-                <i class="bi bi-whatsapp"></i> Whatsapp
-              </a>
-              <a href="agussetiawanphy3@gmail.com">
-                <i class="bi bi-at"></i> My Email</a
-              >
+    <main>
+      <div class="d-flex flex-row">
+        <div class="left-container">
+          <div class="welcome">
+            <p>Nice to meet you!</p>
+            <h1>Welcome to...</h1>
+          </div>
+          <div class="img-about">
+            <img src="./young-man.png" alt="" />
+            <h1>Agus Setiawan</h1>
+            <p>Web Developper based in Indonesia</p>
+            <a href="">Download My CV</a>
+          </div>
+        </div>
+        <div class="right-container">
+          <div class="row row-cols-2">
+            <div class="col">
+              <p>
+                <i class="bi bi-telephone-forward-fill"></i> +62 878-2236-8008
+              </p>
+              <p>
+                <i class="bi bi-envelope-arrow-down-fill"></i>
+                agussetiawanphy3@gmail.com
+              </p>
             </div>
-          </div>
+            <div class="col">
+              <p><i class="bi bi-person-rolodex"></i> 32 yrs</p>
+              <p><i class="bi bi-geo-alt-fill"></i> Indonesia, Indramayu</p>
+            </div>
 
-          <!-- HERO IMAGE -->
-          <div class="hero-img position-relative">
-            <img src="./aguss.png" alt="" />
-          </div>
-          <div
-            class="blue-sosmed flex-column d-flex ms-3 row-gap-3 position-fixed"
-          >
-            <a href="/"><i class="bi bi-instagram"></i></a>
-            <a href="/"><i class="bi bi-github"></i></a>
-            <a href="/"><i class="bi bi-twitter-x"></i></a>
-            <hr style="rotate: 90deg; color: aqua" />
+            <div class="col">
+              <div>
+                <h1 class="float-start">10+</h1>
+                <p>Years experience...</p>
+              </div>
+              <div>
+                <p>
+                  Hello there! My name is Jacob Jones. I am a web designer &
+                  developer, and I'm very passionate and dedicated to my work.
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div>
+                <h1 class="float-start">14</h1>
+                <p>Clients Worldwide...</p>
+              </div>
+              <div>
+                <p>
+                  With 10+ years experience as a professional a graphic
+                  designer, I have acquired the skills and knowledge necessary
+                  to make your project a success.
+                </p>
+              </div>
+            </div>
+            <div class="col col-12 bg-black">
+              <div>
+                <i class="bi bi-quote"></i>
+              </div>
+              <div>
+                <p>
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Faucibus sed sit ultrices et sed metus sollicitudin.”
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <!-- Absolute ICON Sosial Media -->
     </main>
+    <div class="my-experience">
+      <div class="myex-left">
+        <p>Experience</p>
+        <h2>My experience</h2>
+        <p>
+          Hello there! My name is Jacob Jones. I am a web designer & developer,
+          and I'm very passionate and dedicated to my work.
+        </p>
+        <button>Download my resume</button>
+      </div>
+      <div class="myex-right"></div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

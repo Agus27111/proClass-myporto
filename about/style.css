@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap");
+
+:root {
+  --gradient: linear-gradient(-145deg, #00afb5 20.37%, #00477733 57.73%);
+  --gradient-2: #2c2d2f;
+  --def-transition-duration: 0.2s;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.right-container {
+  width: 60%;
+}
+.left-container {
+  width: 40%;
+}
