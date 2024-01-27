@@ -75,11 +75,10 @@ ul li a:hover {
 }
 .quote-icon i {
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .quote-text {
   font-style: italic;
-  line-height: 1.8;
 }
 .my-experience {
   box-sizing: border-box;

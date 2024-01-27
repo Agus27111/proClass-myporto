@@ -38,33 +38,4 @@ ul li a:hover {
 .social-media:hover {
   transform: scale(2);
 }
-/* Works section */
-.scroll-list {
-  height: 40vh;
-}
-.scrollSpy {
-  height: 70vh;
-  overflow-y: scroll;
-  scrollbar-width: none;
-  margin-left: 5rem;
-}
-.testimonial {
-  background: var(--gradient-2);
-}
-.card-carousel {
-  background-color: whitesmoke;
-  color: #2c2d2f;
-  border-radius: 5px;
-  position: relative;
-  padding: 1rem;
-}
-.card-carousel img {
-  width: 48px;
-  height: 48px;
-  border: none;
-  border-radius: 50%;
-  background-color: whitesmoke;
-  position: absolute;
-  bottom: 110px;
-  right: 45%;
-}
+/* Contact section */

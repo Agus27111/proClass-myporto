@@ -79,7 +79,7 @@
                   ><i class="social-media bi bi-github text-white"></i>
                 </a>
                 <a href="/"
-                  ><i class="social-media bi bi-twitter-x text-white"></i>
+                  ><i class="social-media bi bi-linkedin text-white"></i>
                 </a>
               </div>
               <div class="" style="margin-top: 7rem">
@@ -135,20 +135,20 @@
 
               <div class="col mt-5">
                 <div class="mb-4">
-                  <h1 class="float-start">10+</h1>
-                  <p class="ms-2">Years experience...</p>
+                  <h1 class="float-start me-2">10+</h1>
+                  <p class="ms-5">Years experience...</p>
                 </div>
                 <div>
                   <p>
-                    Hello there! My name is Jacob Jones. I am a web designer &
+                    Hello there! My name is Agus Setiawan. I am a web designer &
                     developer, and I'm very passionate and dedicated to my work.
                   </p>
                 </div>
               </div>
               <div class="col mt-5">
                 <div class="mb-4">
-                  <h1 class="float-start">14</h1>
-                  <p class="ms-2">Clients Worldwide...</p>
+                  <h1 class="float-start me-2">14</h1>
+                  <p class="ms-5">Clients Worldwide...</p>
                 </div>
                 <div>
                   <p>
@@ -159,16 +159,13 @@
                 </div>
               </div>
               <div
-                class="api col col-12 d-flex flex-row align-content-center p-2 rounded-1"
+                class="api col col-12 d-flex flex-row align-content-center justify-content-center p-2 rounded-1"
               >
-                <div class="quote-icon ms-5">
+                <div class="quote-icon ms-3">
                   <i class="bi bi-quote"></i>
                 </div>
                 <div class="quote-text">
-                  <p style="margin-bottom: 0">
-                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Faucibus sed sit ultrices et sed metus sollicitudin.”
-                  </p>
+                  <p style="margin-bottom: 0"></p>
                 </div>
               </div>
             </div>
@@ -180,7 +177,7 @@
               <p>Experience</p>
               <h2>My experience</h2>
               <p class="mt-2">
-                Hello there! My name is Jacob Jones. I am a web designer &
+                Hello there! My name is Agus Setiawan. I am a web designer &
                 developer, and I'm very passionate and dedicated to my work.
               </p>
               <button class="btn btn-about mb-3">Download my resume</button>
@@ -230,5 +227,33 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script>
+      async function fetchRandomQuote() {
+        try {
+          const response = await fetch("https://api.quotable.io/random");
+          const data = await response.json();
+
+          // Get the English quote
+          const randomQuote = data.content;
+
+          // Display the quote
+          const quoteElement = document.querySelector(".quote-text p");
+          quoteElement.innerText = `“${randomQuote}”`;
+        } catch (error) {
+          console.error("Error fetching quote:", error);
+        }
+      }
+
+      // Function to fetch a new quote periodically (every 10 seconds in this example)
+      function startAutoRefresh() {
+        setInterval(fetchRandomQuote, 10000); // Adjust the interval as needed (in milliseconds)
+      }
+
+      // Initial fetch when the page loads
+      fetchRandomQuote();
+
+      // Start automatic refresh
+      startAutoRefresh();
+    </script>
   </body>
 </html>
