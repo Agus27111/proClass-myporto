@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap");
+
+:root {
+  --gradient: linear-gradient(-145deg, #00afb5 20.37%, #00477733 57.73%);
+  --gradient-2: #2c2d2f;
+  --def-transition-duration: 0.2s;
+  --gradient-3: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(44, 45, 47, 1) 100%
+  );
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+/* styles.css */
+main {
+  left: 300px;
+  width: 75%;
+  box-sizing: border-box;
+}
+/* aside section*/
+ul li a {
+  transition-property: background-color, padding;
+  transition-duration: var(--def-transition-duration);
+  transition-timing-function: ease-in-out;
+}
+ul li a:hover {
+  background-color: #2c2d2f;
+  padding: 0.8rem 0.5rem;
+}
+.social-media {
+  transition: transform 0.4s ease-in;
+}
+.social-media:hover {
+  transform: scale(2);
+}
+/* Works section */
+.scroll-list {
+  height: 40vh;
+}
+.scrollSpy {
+  height: 70vh;
+  overflow-y: scroll;
+}

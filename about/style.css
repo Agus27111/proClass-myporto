@@ -48,7 +48,7 @@ ul li a:hover {
 .gradient-text {
   background-image: var(--gradient-3);
   /* This will show the gradient as a text color rather than element bg. */
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .box-text p span {
@@ -94,9 +94,12 @@ ul li a:hover {
 .btn-about {
   background: whitesmoke;
   border: none;
-  transition: background 0.4s ease-in-out, color 0.4s ease-out;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-out;
+  border-radius: 0.3em;
+  padding: 0.5em 1em;
+  margin-top: 1.5em;
 }
 .btn-about:hover {
-  background: var(--gradient-2);
+  background-color: var(--gradient-2);
   color: whitesmoke;
 }
