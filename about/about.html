@@ -20,8 +20,8 @@
     <div class="d-flex flex-row justify-content-between">
       <aside class="">
         <div
-          class="aside d-flex flex-column flex-shrink-0 p-3 text-white bg-dark"
-          style="max-width: 250px; height: 100vh"
+          class="aside d-flex flex-column flex-shrink-0 p-3 text-white bg-dark h-100"
+          style="max-width: 250px"
         >
           <div
             class="text-nav p-3 h-100 d-flex flex-column justify-content-between"
@@ -40,7 +40,7 @@
               <li class="nav-item d-flex flex-row align-items-center">
                 <i class="bi bi-house me-2"></i>
                 <a
-                  href="#"
+                  href="../index.html"
                   class="nav-link text-white d-none d-sm-block"
                   aria-current="page"
                   data-bs-toggle="tooltip"
@@ -62,7 +62,7 @@
               <li class="nav-item d-flex flex-row align-items-center">
                 <i class="bi bi-collection me-2"></i>
                 <a
-                  href="./works/works.html"
+                  href="../works/works.html"
                   class="nav-link text-white d-none d-sm-block"
                 >
                   WORKS
@@ -71,7 +71,7 @@
               <li class="nav-item d-flex flex-row align-items-center">
                 <i class="bi bi-envelope-at me-2"></i>
                 <a
-                  href="./contact/contact.html"
+                  href="../contact/contact.html"
                   class="nav-link text-white d-none d-sm-block"
                 >
                   CONTACT
@@ -91,7 +91,7 @@
           </div>
         </div>
       </aside>
-      <main class="px-3 position-relative">
+      <main class="px-3 me-5">
         <div class="welcome mt-5">
           <p>Nice to meet you!</p>
           <h1 class="text-dark">Welcome to...</h1>
@@ -107,10 +107,7 @@
                 <p>
                   <span>Web Developper</span> based in <span>Indonesia</span>
                 </p>
-                <a
-                  href=""
-                  class=""
-                  style="font-size: 10px; color: rgba(63, 94, 251, 1) 0%"
+                <a href="" class="myCv"
                   >Download My CV <i class="bi bi-arrow-down-square-fill"></i
                 ></a>
               </div>
@@ -218,6 +215,14 @@
             </div>
           </div>
         </div>
+        <div
+          class="blue-sosmed flex-column d-flex ms-3 row-gap-3 position-fixed"
+        >
+          <a href="/"><i class="bi bi-instagram"></i></a>
+          <a href="/"><i class="bi bi-github"></i></a>
+          <a href="/"><i class="media bi bi-linkedin"></i></a>
+          <hr style="rotate: 90deg; color: aqua" />
+        </div>
       </main>
     </div>
 
@@ -231,8 +236,6 @@
         try {
           const response = await fetch("https://api.quotable.io/random");
           const data = await response.json();
-
-          // Get the English quote
           const randomQuote = data.content;
 
           // Display the quote
@@ -243,9 +246,9 @@
         }
       }
 
-      // Function to fetch a new quote periodically (every 10 seconds in this example)
+      // Function to start automatic refresh
       function startAutoRefresh() {
-        setInterval(fetchRandomQuote, 10000); // Adjust the interval as needed (in milliseconds)
+        setInterval(fetchRandomQuote, 10000);
       }
 
       // Initial fetch when the page loads

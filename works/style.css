@@ -70,3 +70,20 @@ main {
   bottom: 110px;
   right: 45%;
 }
+/* floating icon */
+.blue-sosmed {
+  position: fixed;
+  top: 50%;
+  right: 1rem;
+  transform: translate(0, -50%);
+}
+.blue-sosmed a:link {
+  transition: transform 0.3s ease !important;
+}
+.blue-sosmed a:link:hover {
+  transform: scale(1.2) !important;
+}
+
+.blue-sosmed hr {
+  border: 0.5px solid #00afb5;
+}

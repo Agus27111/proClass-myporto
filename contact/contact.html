@@ -19,12 +19,12 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="d-flex flex-row justify-content-between">
+    <div class="d-flex flex-row">
       <!-- Start Aside -->
       <aside class="">
         <div
-          class="aside d-flex flex-column flex-shrink-0 p-3 text-white bg-dark"
-          style="max-width: 250px; height: 100vh"
+          class="aside d-flex flex-column flex-shrink-0 p-3 text-white bg-dark h-100"
+          style="max-width: 250px"
         >
           <div
             class="text-nav p-3 h-100 d-flex flex-column justify-content-between"
@@ -43,7 +43,7 @@
               <li class="nav-item d-flex flex-row align-items-center">
                 <i class="bi bi-house me-2"></i>
                 <a
-                  href="#"
+                  href="../index.html"
                   class="nav-link text-white d-none d-sm-block"
                   aria-current="page"
                   data-bs-toggle="tooltip"
@@ -65,7 +65,7 @@
               <li class="nav-item d-flex flex-row align-items-center">
                 <i class="bi bi-collection me-2"></i>
                 <a
-                  href="./works/works.html"
+                  href="../works/works.html"
                   class="nav-link text-white d-none d-sm-block"
                 >
                   WORKS
@@ -74,7 +74,7 @@
               <li class="nav-item d-flex flex-row align-items-center">
                 <i class="bi bi-envelope-at me-2"></i>
                 <a
-                  href="./contact/contact.html"
+                  href="../contact/contact.html"
                   class="nav-link text-white d-none d-sm-block"
                 >
                   CONTACT
@@ -94,7 +94,7 @@
           </div>
         </div>
       </aside>
-      <main class="px-3 position-relative">
+      <main class="px-3 ms-lg-4">
         <div class="welcome mt-5">
           <p><em>Contact</em></p>
           <h1 class="text-dark">Reach out me</h1>
@@ -108,7 +108,7 @@
                   type="text"
                   class="form-control"
                   id="inputName"
-                  placeholder="Agus Setiawan"
+                  placeholder="your name"
                 />
               </div>
               <div class="col-md-6">
@@ -126,7 +126,7 @@
                   type="text"
                   class="form-control"
                   id="inputAddress"
-                  placeholder="1234 Main St"
+                  placeholder="Jl Teluk bayur no 1"
                 />
               </div>
               <div class="col-md-6">
@@ -154,6 +154,14 @@
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
+        </div>
+        <div
+          class="blue-sosmed flex-column d-flex ms-3 row-gap-3 position-fixed"
+        >
+          <a href="/"><i class="bi bi-instagram"></i></a>
+          <a href="/"><i class="bi bi-github"></i></a>
+          <a href="/"><i class="media bi bi-linkedin"></i></a>
+          <hr style="rotate: 90deg; color: aqua" />
         </div>
       </main>
     </div>
